@@ -1,5 +1,9 @@
 package ui;
 
+import model.LayananFrame;
+import model.PelangganFrame;
+import model.UserFrame;
+
 import javax.swing.*;
 
 public class MainFrame extends JFrame {
@@ -44,8 +48,24 @@ public class MainFrame extends JFrame {
         btnKeluar.setBounds(200, 260, 150, 40);
         add(btnKeluar);
 
+        // --- Action Buttons ---
+        btnLayanan.addActionListener(e -> {
+            new LayananFrame().setVisible(true);
+        });
+
+        btnPelanggan.addActionListener(e -> {
+            new PelangganFrame().setVisible(true);
+        });
+
+        btnPengguna.addActionListener(e -> {
+            new UserFrame().setVisible(true);
+        });
+
         btnKeluar.addActionListener(e -> {
-            dispose(); // menutup aplikasi
+            int confirm = JOptionPane.showConfirmDialog(this, "Yakin mau keluar?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                dispose(); // menutup aplikasi
+            }
         });
     }
 }
