@@ -1,2 +1,2 @@
-# LAPRAK -> src -> LAPRAK
+# NewJavaProject -> src -> LAPRAK
 
