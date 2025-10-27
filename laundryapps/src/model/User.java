@@ -35,20 +35,31 @@ public class User {
         this.password = password;
     }
 
+    // Method login
     public static boolean login(String username, String password) {
         boolean isLoggin = false;
+
         User user = new User();
         user.setId("1");
         user.setNama("ima");
         user.setUsername("ima");
         user.setPassword("12345");
 
-        if (user.getUsername().equalsIgnoreCase(username) 
-            && user.getPassword().equalsIgnoreCase(password)) {
+  
+        String cleanUsername = username.replaceAll("\\s+", "").toLowerCase();
+        String cleanPassword = password.trim();
+
+     
+        String dbUsername = user.getUsername().replaceAll("\\s+", "").toLowerCase();
+        String dbPassword = user.getPassword().trim();
+
+
+        if (dbUsername.equals(cleanUsername) && dbPassword.equals(cleanPassword)) {
             isLoggin = true;
         } else {
             isLoggin = false;
         }
+
         return isLoggin;
     }
 }
