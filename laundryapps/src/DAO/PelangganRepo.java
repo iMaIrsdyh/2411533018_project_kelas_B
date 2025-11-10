@@ -2,6 +2,7 @@ package DAO;
 
 import config.Database;
 import model.Pelanggan;
+import model.PelangganBuilder;
 
 import java.sql.*;
 import java.util.ArrayList;

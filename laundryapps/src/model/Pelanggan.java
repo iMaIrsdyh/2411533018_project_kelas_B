@@ -6,7 +6,13 @@ public class Pelanggan {
     private String alamat;
     private String noHp;
 
-    public String getId() { return id; }
+    public Pelanggan(String id2, String nama2, String alamat2, String noHp2) {
+		// TODO Auto-generated constructor stub
+	}
+	public Pelanggan() {
+		// TODO Auto-generated constructor stub
+	}
+	public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 
     public String getNama() { return nama; }
