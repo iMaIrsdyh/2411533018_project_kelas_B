@@ -1,5 +1,8 @@
 package DAO;
 
+//Karimah Irsyadiyah
+//2411533018
+
 import model.Pelanggan;
 import java.util.List;
 

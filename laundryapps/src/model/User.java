@@ -1,5 +1,8 @@
 package model;
 
+//Karimah Irsyadiyah
+//2411533018
+
 public class User {
     String id, nama, username, password;
 

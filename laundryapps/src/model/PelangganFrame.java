@@ -1,5 +1,8 @@
 package model;
 
+//Karimah Irsyadiyah
+//2411533018
+
 import DAO.PelangganRepo;
 import table.TablePelanggan;
 

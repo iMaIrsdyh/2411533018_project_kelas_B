@@ -1,5 +1,8 @@
 package model;
 
+//Karimah Irsyadiyah
+//2411533018
+
 public class Pelanggan {
     private String id;
     private String nama;

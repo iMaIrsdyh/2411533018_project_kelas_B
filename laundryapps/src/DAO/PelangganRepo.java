@@ -1,5 +1,8 @@
 package DAO;
 
+//Karimah Irsyadiyah
+//2411533018
+
 import config.Database;
 import model.Pelanggan;
 import model.PelangganBuilder;
